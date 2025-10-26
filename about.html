@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>About Us - MiSitio</title>
+  <link rel="stylesheet" href=" estilos.css">
+  
+</head>
+<body>
+  <nav class="navbar">
+    <div class="nav-left">
+      <a href="index.html" class="nav-logo">MiSitio</a>
+      <a href="index.html" class="nav-link">Home</a>
+      <a href="about.html" class="nav-link active">About Us</a>
+    </div>
+    <div class="nav-right">
+      <span id="userName" class="user-name"></span>
+      <button id="loginBtn" class="icon-btn" title="Login">
+        <span class="login-icon">🔒</span>
+      </button>
+    </div>
+  </nav>
+  <main>
+    <section id="about">
+      <h1>Acerca de Nosotros</h1>
+      <p>Estoy desarrollando una solución web que consume una API REST para la autenticación de usuarios.</p>
+      <p>Esta es la página "About Us" de la práctica.</p>
+    </section>
+  </main>
+
+  <div id="loginModal" class="modal">
+    <div class="modal-content">
+      <span id="closeModal" class="close">&times;</span>
+      <h2>Iniciar Sesión</h2>
+      <form id="formLogin">
+        <label for="login">Usuario (cuenta):</label>
+        <input type"text" id="login" name="login" required>
+        
+        <label for="password">Contraseña:</label>
+        <input type="password" id="password" name="password" required>
+        
+        <button type="submit">Ingresar</button>
+      </form>
+    </div>
+  </div>
+  
+  <footer class="footer-fijo">
+    <p>Ángel Sahagun | Programación Web | 21 de Octubre, 2025</p>
+  </footer>
+
+  <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+  <script src="app.js"></script>
+</body>
+</html>
